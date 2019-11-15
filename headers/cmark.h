@@ -14,3 +14,8 @@
 #import <cmark/cmark-gfm-extension_api.h>
 #import <cmark/cmark-gfm-extensions_export.h>
 #import <cmark/cmark-gfm-core-extensions.h>
+
+#import <cmark/cmark_ctype.h>
+#import <cmark/buffer.h>
+#import <cmark/chunk.h>
+#import <cmark/node.h>

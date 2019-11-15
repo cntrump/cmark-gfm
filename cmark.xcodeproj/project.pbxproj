@@ -20,7 +20,7 @@
 		73AD8F9F22D9AA8B009CEC96 /* cmark-gfm-extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F6822D9AA8B009CEC96 /* cmark-gfm-extension_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73AD8FA022D9AA8B009CEC96 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F6922D9AA8B009CEC96 /* houdini_href_e.c */; };
 		73AD8FA122D9AA8B009CEC96 /* map.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F6A22D9AA8B009CEC96 /* map.h */; };
-		73AD8FA222D9AA8B009CEC96 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F6B22D9AA8B009CEC96 /* chunk.h */; };
+		73AD8FA222D9AA8B009CEC96 /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F6B22D9AA8B009CEC96 /* chunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73AD8FA322D9AA8B009CEC96 /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F6C22D9AA8B009CEC96 /* syntax_extension.c */; };
 		73AD8FA622D9AA8B009CEC96 /* footnotes.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F6F22D9AA8B009CEC96 /* footnotes.h */; };
 		73AD8FA722D9AA8B009CEC96 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7022D9AA8B009CEC96 /* parser.h */; };
@@ -28,15 +28,15 @@
 		73AD8FA922D9AA8B009CEC96 /* plaintext.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F7222D9AA8B009CEC96 /* plaintext.c */; };
 		73AD8FAA22D9AA8B009CEC96 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7322D9AA8B009CEC96 /* scanners.h */; };
 		73AD8FAB22D9AA8B009CEC96 /* config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = 73AD8F7422D9AA8B009CEC96 /* config.h.in */; };
-		73AD8FAC22D9AA8B009CEC96 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7522D9AA8B009CEC96 /* node.h */; };
+		73AD8FAC22D9AA8B009CEC96 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7522D9AA8B009CEC96 /* node.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73AD8FAD22D9AA8B009CEC96 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F7622D9AA8B009CEC96 /* utf8.c */; };
 		73AD8FAE22D9AA8B009CEC96 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F7722D9AA8B009CEC96 /* references.c */; };
 		73AD8FAF22D9AA8B009CEC96 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F7822D9AA8B009CEC96 /* render.c */; };
 		73AD8FB022D9AA8B009CEC96 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F7922D9AA8B009CEC96 /* iterator.c */; };
 		73AD8FB122D9AA8B009CEC96 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7A22D9AA8B009CEC96 /* registry.h */; };
 		73AD8FB222D9AA8B009CEC96 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F7B22D9AA8B009CEC96 /* arena.c */; };
-		73AD8FB322D9AA8B009CEC96 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7C22D9AA8B009CEC96 /* cmark_ctype.h */; };
-		73AD8FB422D9AA8B009CEC96 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7D22D9AA8B009CEC96 /* buffer.h */; };
+		73AD8FB322D9AA8B009CEC96 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7C22D9AA8B009CEC96 /* cmark_ctype.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73AD8FB422D9AA8B009CEC96 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F7D22D9AA8B009CEC96 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73AD8FB622D9AA8B009CEC96 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F7F22D9AA8B009CEC96 /* linked_list.c */; };
 		73AD8FB722D9AA8B009CEC96 /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AD8F8022D9AA8B009CEC96 /* syntax_extension.h */; };
 		73AD8FB822D9AA8B009CEC96 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 73AD8F8122D9AA8B009CEC96 /* commonmark.c */; };
@@ -160,11 +160,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15FC64FA237E2ACC00B5DFB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		73AD8ED522D9A8E7009CEC96 = {
 			isa = PBXGroup;
 			children = (
 				73AD8F5A22D9AA76009CEC96 /* cmark */,
 				73AD8EE022D9A8E7009CEC96 /* Products */,
+				15FC64FA237E2ACC00B5DFB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,6 +299,9 @@
 				73AD8FFE22D9AD75009CEC96 /* cmark.h in Headers */,
 				73AD8FFF22D9AD75009CEC96 /* cmark-gfm_export.h in Headers */,
 				73AD8FA222D9AA8B009CEC96 /* chunk.h in Headers */,
+				73AD8FB422D9AA8B009CEC96 /* buffer.h in Headers */,
+				73AD8FAC22D9AA8B009CEC96 /* node.h in Headers */,
+				73AD8FB322D9AA8B009CEC96 /* cmark_ctype.h in Headers */,
 				73AD8FA622D9AA8B009CEC96 /* footnotes.h in Headers */,
 				73AD8FE822D9AAA0009CEC96 /* tagfilter.h in Headers */,
 				73AD8FA122D9AA8B009CEC96 /* map.h in Headers */,
@@ -302,13 +313,10 @@
 				73AD8FE022D9AAA0009CEC96 /* tasklist.h in Headers */,
 				73AD8FC522D9AA8B009CEC96 /* utf8.h in Headers */,
 				73AD8FC722D9AA8B009CEC96 /* references.h in Headers */,
-				73AD8FB322D9AA8B009CEC96 /* cmark_ctype.h in Headers */,
 				73AD8FBC22D9AA8B009CEC96 /* inlines.h in Headers */,
 				73AD8FB722D9AA8B009CEC96 /* syntax_extension.h in Headers */,
 				73AD8FE722D9AAA0009CEC96 /* table.h in Headers */,
-				73AD8FAC22D9AA8B009CEC96 /* node.h in Headers */,
 				73AD8FE422D9AAA0009CEC96 /* strikethrough.h in Headers */,
-				73AD8FB422D9AA8B009CEC96 /* buffer.h in Headers */,
 				73AD8F9A22D9AA8B009CEC96 /* html.h in Headers */,
 				73AD8F9D22D9AA8B009CEC96 /* plugin.h in Headers */,
 				73AD8FB122D9AA8B009CEC96 /* registry.h in Headers */,
